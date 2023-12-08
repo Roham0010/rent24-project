@@ -1,17 +1,17 @@
-#### Project descriptions
+# Project descriptions
 
-### FrontEnd
+## FrontEnd
 
 - I have done some simpel validations to just showcase what can be done.
 
-### Backend:
+## Backend:
 
-# The way it's done:
+### The way it's done:
 
 I first load the file into memory and save it to the database to be able to handle it with a sync system and manage to not loose any data during the processing of the data.
 I did set the memory limit to maximum because only reading the file once and inserting it to a table in batches will not take much time an resources and it will be okay on production too.
 
-# Notes:
+## Notes:
 
 - We have a sync system that for both saving XML data to database and processing the data and inserting actual products it's used, by that sync system everytime we run the sync we will continue where we left off and there will be no data loss and duplications for products.
 - The fetchind data from XML file and processing and storing it in database both executes in jobs.
